@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anubhav's Stake</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- register page -->
+
+    <div class="container" id="part1">
+      <div class="register" id="register">
+        <div class="heading">
+          <h1>Create an Account</h1>
+          <i class="fa fa-close" id="closeBtn"></i>
+        </div>
+        <div class="content">
+          <label for="email" id="email" class="email"
+            >Email <span>*</span></label
+          >
+          <input type="email" id="emailInput" class="email-input" required />
+
+          <label for="username" id="username" class="username"
+            >Username <span>*</span></label
+          >
+          <input
+            type="text"
+            id="usernameInput"
+            class="username-input"
+            required
+          />
+          <p class="userPara">Your username must be 3-14 character long</p>
+
+          <label for="password" id="password" class="password" required
+            >Password <span>*</span></label
+          >
+          <input
+            type="text"
+            id="passwordInput"
+            class="password-input"
+            required
+          />
+
+          <label for="dateOfBirth" id="dob" class="dob"
+            >Date of Birth <span>*</span></label
+          >
+          <div class="dob">
+            <input
+              type="text"
+              id="date"
+              class="dob-input"
+              maxlength="2"
+              placeholder="DD"
+              class="dob-input"
+              required
+            />
+            <select id="month" class="dob-input" required>
+              <option value="" disabled selected>Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <input
+              type="text"
+              id="year"
+              maxlength="4"
+              placeholder="YYYY"
+              class="dob-input"
+              required
+            />
+          </div>
+
+          <label for="phone" id="phone" class="phone">Phone (Optional)</label>
+          <div class="phone-details">
+            <select id="countryCode" class="country-code">
+              <option value="" disabled selected>Country Code</option>
+              <option value="India">+91</option>
+              <option value="Pakistan">+92</option>
+            </select>
+            <input
+              type="number"
+              id="phoneInput"
+              class="phone-input"
+              maxlength="10"
+            />
+          </div>
+          <p class="terms">
+            By submitting your phone number, you are opting-in to receive
+            marketing communications & offers via SMS from Anubhav.
+          </p>
+        </div>
+        <button type="button" class="submit" id="submitbtn">Submit</button>
+      </div>
+
+      <!-- register page ends -->
+
+    </div>
+
+    <!-- main section starts -->
+
+    <div class="main" id="part2">
+      <div class="nav">
+        <div class="nav-item start">
+          <img src="./images/stake-logo-32413A9DB1-seeklogo.com.png" />
+        </div>
+        <div class="nav-item middle">
+            <h1>₹0.00</h1>
+            <button class="wallet">Wallet</button>
+        </div>
+        <div class="nav-item last">
+            <i class="fa fa-search"><button>Search</button></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-bell"></i>
+            <i class="fa fa-copy"></i>
+        </div>
+      </div>
+      <div class="body">
+        <div class="card-1">
+            <h3>Announcement</h3>
+            <h1>Poker</h1>
+            <p>Cash Games now live!</p>
+            <p>Read More</p>
+            <button class="cardBtn">Play Now</button>
+            <img src="./images/930c212d17af880a069c28e1eaaa223bb1971898-2160x2160.jpg" alt="">
+        </div>
+        <div class="card-2">
+            <h3>Announcement</h3>
+            <h1>Daily Races</h1>
+            <p>Play in our $1000,000</p>
+            <p>Daily Race Read More</p>
+            <button class="cardBtn">Race Now</button>
+            <img src="./images/5fb8f7b8211dc695b4aebc6337d6ef3f0d7b6042-1080x1080 (1).jpg" alt="">
+        </div>
+        <div class="card-3">
+            <h3>Announcement</h3>
+            <h1>Weekly Rafle</h1>
+            <p>Share in $75,000 each</p>
+            <p>week Read More</p>
+            <button class="cardBtn">Learn Now</button>
+            <img src="./images/593358452d12a346fa8b9692181330f87ffce0a1-1080x1080.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- main section ends -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
